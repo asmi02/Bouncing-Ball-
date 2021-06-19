@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: lightslategrey;
+}
+
+.ball{
+    height:800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div ul li{
+    width: 100px;
+    height: 100px;
+    background-color: #c9c632;
+    list-style: none;
+    border-radius: 50%;
+}
+div ul li:hover{
+    animation: bounce 1.5s ease 0s infinite alternate both;
+}
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div ul{
+    border-bottom: 5px solid black;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    50%{
+        transform: translateY(-150px);
+        box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2);
+    }
+    100%{
+        transform: translateY(0);
+        box-shadow: 0 50px 50px rgba(0, 0, 0, 0.9);
+    }
+}
